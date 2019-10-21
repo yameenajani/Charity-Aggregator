@@ -1,0 +1,368 @@
+<head>
+    <title>Capture</title>
+  
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link href='css/bootstrap.css' rel='stylesheet' />
+
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+<!--     <link href='css/ct-navbar.css' rel='stylesheet' /> -->
+    <link href='css/rotating-card.css' rel='stylesheet' />
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <style>
+        body{
+            margin-top: 100px;
+        }
+        .navbar-default .navbar-nav > li > a{
+            padding: 15px 15px;
+            margin: 5px 0;
+        }
+
+        .navbar-default{
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-color: transparent;
+            box-shadow: 0 0px 13px rgba(0,0,0,.2);
+        }
+        .btn-info,
+        .btn-info:hover,
+        .btn-info:focus{
+            color: #FFF !important;
+            background-color: #00bbff !important;
+            border-color: #00bbff !important;
+        }
+
+        .btn-info{
+            opacity: .8;
+            transition: all 0.1s;
+            -webkit-transition: all 0.1s;
+        }
+        .btn-info:hover,
+        .btn-info:focus{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+        
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand navbar-brand-logo" href="#">
+                <div class="brand"> Capture </div>
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-down">
+                
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">                      {{> loginButtons}}
+                        <header>
+                          {{#if currentUser}}
+                            <!-- <form class="new-task">
+                                <input id="pay_button" type="button" name="Contribute" value="Contribute" />
+                            </form> -->
+                          {{/if}}
+                        </header> <span class="sr-only">(current)</span></a>
+                  </li>
+                <li>
+                    <a>
+                    </a>
+                </li>
+           
+              </ul>
+
+           
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="row">
+        <h1 class="title">
+            The measure of life is not its duration, but its donation.
+            <br>
+            <small>Capture connects nonprofits, donors, and companies in nearly every country around the world. We help local nonprofits access the funding, tools, training, and support they need to become more effective.</small>
+        </h1>
+        <div class="col-sm-10 col-sm-offset-1">
+         <div class="col-md-4 col-sm-6">
+             <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201902/Pulwama_terror_attack_kashmir_AP.jpeg?0SDw0vpVa68zxB5ft7jZVB4WtXSRyG35"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="https://static-news.moneycontrol.com/static-mcnews/2019/02/Pulwama-Attack-1-770x433.jpg"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Pulwama attack</h3>
+                                <p class="profession">Terror Attack</p>
+                                <p class="text-center">On 14 February 2019, a convoy of vehicles carrying security personnel was attacked by a vehicle-borne suicide bomber in the Pulwama district</p>
+                            </div>
+                            <div class="footer">
+                                <i class="fa fa-mail-forward"></i> Auto Rotation
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">Lets stand strong with our brave army</h5>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Donate Today and Bring a Smile</h4>
+                                <p class="text-center"></p>
+
+                                <div class="stats-container">
+                                    <div class="stats">
+                                        <h4>75</h4>
+                                        <p>
+                                            Initiatives from across India
+                                        </p>
+                                    </div>
+                                    <div class="stats">
+                                        <h4>114</h4>
+                                        <p>
+                                            Supporters
+                                        </p>
+                                    </div>
+                                    <div class="stats">
+                                        <h4>₹55.76L</h4>
+                                        <p>
+                                            Raised in Support of Martyr Families
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="social-links text-center">
+                                <a href="https://www.facebook.com/donate/g/indian-army-pulwama-attack/1059957640856034/" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a href="https://bharatkeveer.gov.in" class="google"><i class="fa fa-google fa-fw"></i></a>
+                                <a href="https://twitter.com/hashtag/pulwama?lang=en" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col sm 3 -->
+<!--         <div class="col-sm-1"></div> -->
+        <div class="col-md-4 col-sm-6">
+             <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="https://cdnimgen.vietnamplus.vn/t660/Uploaded/wbxx/2018_09_29/vna_Indonesia_Death_toll_from_earthquake_tsunami_amounts_to_384.jpg"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="https://upload.wikimedia.org/wikipedia/en/1/19/News-Tsunami-Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Indonesia earthquakes and tsunami</h3>
+                                <p class="profession">Natural disaster</p>
+                                <p class="text-center">More than 400 people are reported dead after a tsunami struck on Dec. 22, 2018</p>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i> Manual Rotation
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">We cannot stop natural disasters but we can arm ourselves with knowledge</h5>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Our charity’s disaster relief work takes us relentlessly across the world to support the communities worst hit by natural disasters.</h4>
+                                <p class="text-center"></p>
+
+                                <div class="stats-container">
+                                    <div class="stats">
+                                        <h4>90</h4>
+                                        <p>
+                                            Initiatives
+                                        </p>
+                                    </div>
+                                    <div class="stats">
+                                        <h4>1147</h4>
+                                        <p>
+                                            Supporters
+                                        </p>
+                                    </div>
+                                    <div class="stats">
+                                        <h4>₹13.97L</h4>
+                                        <p>
+                                            Money Raised 
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                <i class="fa fa-reply"></i> Back
+                            </button>
+                            <div class="social-links text-center">
+                                <a href="https://www.facebook.com/NaturalDisasters/" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a href="#" class="google"><i class="fa fa-google fa-fw"></i></a>
+                                <a href="https://twitter.com/disasterstories?lang=en" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col sm 3 -->
+<!--         <div class="col-sm-1"></div> -->
+        <div class="col-md-4 col-sm-6">
+            <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="https://www.farmprogress.com/sites/farmprogress.com/files/styles/article_featured_standard/public/HarvestingSoybeans100917-1540x800_0.jpg?itok=hSBILUca"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="https://c8.alamy.com/comp/XB0DF6/farmer-holding-pitchfork-circle-retro-XB0DF6.jpg"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Farming: A problem that cannot be solved</h3>
+                                <p class="profession">Developing Countries</p>
+
+                                <p class="text-center">Farming isn’t static but a dynamic living organism that evolves over time.</p>
+                            </div>
+                            <div class="footer">
+                                <div class="rating">
+                                    <i class="fa fa-mail-forward"></i> Auto Rotation
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">“Farming Is A Profession Of Hope.”</h5>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Let us not forget that the cultivation of the earth is the most important labor of man. When tillage begins, other arts will follow. The farmers, therefore, are the founders of civilization.</h4>
+                                <!-- <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p> -->
+
+                                <div class="stats-container">
+                                    <div class="stats">
+                                        <h4>235</h4>
+                                        <p>
+                                            Initiatives
+                                        </p>
+                                    </div>
+                                    <div class="stats">
+                                        <h4>3645</h4>
+                                        <p>
+                                            Supporters
+                                        </p>
+                                    </div>
+                                    <div class="stats">
+                                        <h4>₹70L</h4>
+                                        <p>
+                                            Money Raised
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="social-links text-center">
+                                <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a href="#" class="google"><i class="fa fa-google fa-fw"></i></a>
+                                <a href="https://twitter.com/farmer_problems?lang=en" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col-sm-3 -->
+        </div> <!-- end col-sm-10 -->
+    </div> <!-- end row -->
+    <div class="space-0"></div>
+</div>
+<div class="white-board">
+   <div class="container">
+        <br>
+        <br>
+        <div class="space-0"></div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <a href="https://www.payumoney.com/paybypayumoney/#/71123F0E0A004B6186339F17C9E253DC" class="btn btn-info btn-lg btn-block">Contribute</a>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="space-50"></div>
+    <p class="text-center">Copyright &copy; 2019 <a href="https://samyakgaur-fecomps.netlify.com">Capture</a>, made with <i class="fa fa-heart ct-heart"></i> for a better Tomorrow.</p>
+   </div>
+</div>
+<ul>
+    <template>  
+      <li>
+        <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+ 
+        <span class="text"><strong>{{username}}</strong> - {{text}}</span>
+      </li>
+    </template>
+    </ul>
+
+
+<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $().ready(function(){
+        $('[rel="tooltip"]').tooltip();
+
+        $('a.scroll-down').click(function(e){
+            e.preventDefault();
+            scroll_target = $(this).data('href');
+             $('html, body').animate({
+                 scrollTop: $(scroll_target).offset().top - 60
+             }, 1000);
+        });
+
+    });
+
+    function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
+
+
+</script>
+
+</body>
+
